@@ -1,8 +1,8 @@
 # DevTools Explorer 98 — Браузеры и плагины для Web-разработки
 
-[![GitHub Pages Status](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://<твой-github-username>.github.io/devtools-explorer-98/)
+[![GitHub Pages Status](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://kanevadorof.github.io/site/media.html)
 
-**Работающий сайт (Live Demo):** [https://<твой-github-username>.github.io/devtools-explorer-98/](https://<твой-github-username>.github.io/devtools-explorer-98/)
+**Работающий сайт (Live Demo):** [https://kanevadorof.github.io/site/media.html](https://kanevadorof.github.io/site/media.html)
 
 ## 📌 Описание
 Учебный проект по теме **«Браузеры и плагины для Web-разработки (DevTools)»**, стилизованный под интерфейс Windows 98 с использованием CSS-фреймворка **98.css**. Проект содержит 10 связных страниц с подробным обучающим контентом, адаптивной версткой и интерактивом.
