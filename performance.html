@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance & Memory — DevTools 98 | Канева Валерия</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="site-header window">
+      <div class="title-bar header-bar">
+        <div class="title-bar-text brand-title">💻 DevTools_Explorer_v1.0.exe</div>
+        <button class="mobile-toggle" id="mobileMenuToggle">☰ Меню</button>
+      </div>
+      <div class="window-body">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="performance.html" class="active">Performance</a></li>
+            <li><a href="plugins.html">Плагины</a></li>
+            <li><a href="comparison.html">Сравнение</a></li>
+            <li><a href="media.html">Видеоуроки</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <section class="window">
+          <div class="title-bar"><div class="title-bar-text">Анализ производительности и оптимизация памяти</div></div>
+          <div class="window-body">
+            <h2>Профилирование в Performance & Memory</h2>
+            <p>Панели <strong>Performance</strong> и <strong>Memory</strong> позволяют выявлять «узкие места» рендеринга, просадки кадров (FPS) и утечки оперативной памяти.</p>
+
+            <fieldset>
+              <legend>Метрики Web Vitals (Core Web Vitals)</legend>
+              <ul>
+                <li><strong>LCP (Largest Contentful Paint):</strong> Время отрисовки самого крупного видимого элемента.</li>
+                <li><strong>INP (Interaction to Next Paint):</strong> Отклик интерфейса на действия пользователя.</li>
+                <li><strong>CLS (Cumulative Layout Shift):</strong> Визуальная стабильность верстки.</li>
+              </ul>
+            </fieldset>
+
+            <h3>Поиск утечек памяти в панели Memory</h3>
+            <p>Инструмент <em>Heap Snapshot</em> делает снимок распределения памяти в куче JavaScript для обнаружения незакрытых обработчиков событий и отсоединенных DOM-узлов.</p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-content">
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Оптимизация</div></div>
+          <div class="window-body">
+            <p>Целевая частота кадров для плавного скролла и анимаций составляет 60 FPS (16.6 миллисекунд на кадр).</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="site-footer window">
+      <div class="status-bar-custom">
+        <span>© 2026 Канева Валерия Сергеевна</span>
+        <span>Тема: DevTools</span>
+        <span>Фреймворк: 98.css</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

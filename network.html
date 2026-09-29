@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель Network — DevTools 98 | Канева Валерия</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="site-header window">
+      <div class="title-bar header-bar">
+        <div class="title-bar-text brand-title">💻 DevTools_Explorer_v1.0.exe</div>
+        <button class="mobile-toggle" id="mobileMenuToggle">☰ Меню</button>
+      </div>
+      <div class="window-body">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="network.html" class="active">Network</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="plugins.html">Плагины</a></li>
+            <li><a href="comparison.html">Сравнение</a></li>
+            <li><a href="media.html">Видеоуроки</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <section class="window">
+          <div class="title-bar"><div class="title-bar-text">Мониторинг сетевой активности (Network)</div></div>
+          <div class="window-body">
+            <h2>Панель Network</h2>
+            <p>Панель <strong>Network</strong> записывает все сетевые запросы, отправляемые и получаемые страницей: HTML, CSS, JS, изображения, а также асинхронные запросы XHR/Fetch.</p>
+
+            <img src="https://picsum.photos/800/350?random=3" 
+                 srcset="https://picsum.photos/400/200?random=3 400w, https://picsum.photos/800/350?random=3 800w" 
+                 sizes="(max-width: 767px) 100vw, 800px" 
+                 alt="Сетевые запросы Network" class="responsive-img">
+
+            <fieldset>
+              <legend>Важнейшие настройки панели Network</legend>
+              <ul>
+                <li><strong>Disable Cache:</strong> Отключение кэширования при открытых DevTools для проверки загрузки с сервера.</li>
+                <li><strong>Throttling (Ограничение скорости):</strong> Эмуляция соединения 3G/Slow 3G для проверки мобильной оптимизации.</li>
+                <li><strong>Waterfall (Водопад):</strong> Диаграмма этапов загрузки (DNS lookup, Initial connection, TTFB, Content Download).</li>
+              </ul>
+            </fieldset>
+
+            <h3>Анализ статусов ответов HTTP</h3>
+            <p>Панель подсвечивает ответы цветом: 200 (ОК — зеленый), 304 (Not Modified), 404 (Not Found — красный), 500 (Server Error).</p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-content">
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Экспорт</div></div>
+          <div class="window-body">
+            <p>Запросы можно экспортировать в формат HAR (HTTP Archive) или скопировать как cURL.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="site-footer window">
+      <div class="status-bar-custom">
+        <span>© 2026 Канева Валерия Сергеевна</span>
+        <span>Тема: DevTools</span>
+        <span>Фреймворк: 98.css</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

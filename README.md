@@ -1,0 +1,25 @@
+# DevTools Explorer 98 — Браузеры и плагины для Web-разработки
+
+[![GitHub Pages Status](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://<твой-github-username>.github.io/devtools-explorer-98/)
+
+**Работающий сайт (Live Demo):** [https://<твой-github-username>.github.io/devtools-explorer-98/](https://<твой-github-username>.github.io/devtools-explorer-98/)
+
+## 📌 Описание
+Учебный проект по теме **«Браузеры и плагины для Web-разработки (DevTools)»**, стилизованный под интерфейс Windows 98 с использованием CSS-фреймворка **98.css**. Проект содержит 10 связных страниц с подробным обучающим контентом, адаптивной версткой и интерактивом.
+
+### 👤 Автор
+- **Студент:** Канева Валерия Сергеевна
+- **Группа:** 835
+- **Вариант темы:** №16
+- **Вариант CSS-фреймворка:** №42 (98.css)
+
+## 🛠️ Стек технологий
+- **HTML5:** Семантическая и валидная разметка W3C, таблицы, формы, iframe, srcset/sizes.
+- **CSS3:** Кастомные стили (`css/style.css`), Flexbox & CSS Grid, медиазапросы.
+- **CSS Framework:** `98.css` (подключение через CDN Unpkg).
+- **JavaScript (Vanilla JS):** Адаптивное бургер-меню, переключение вкладок, фильтрация плагинов, валидация и модальные окна.
+
+## 📐 Контрольные точки (Breakpoints)
+- Мобильные устройства: `< 768px`
+- Планшеты: `≥ 768px`
+- Десктопы: `≥ 992px`

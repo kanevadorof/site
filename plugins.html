@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Плагины для веб-разработки — DevTools 98 | Канева Валерия</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="site-header window">
+      <div class="title-bar header-bar">
+        <div class="title-bar-text brand-title">💻 DevTools_Explorer_v1.0.exe</div>
+        <button class="mobile-toggle" id="mobileMenuToggle">☰ Меню</button>
+      </div>
+      <div class="window-body">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="plugins.html" class="active">Плагины</a></li>
+            <li><a href="comparison.html">Сравнение</a></li>
+            <li><a href="media.html">Видеоуроки</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <section class="window">
+          <div class="title-bar"><div class="title-bar-text">Полезные расширения браузеров для разработчиков</div></div>
+          <div class="window-body">
+            <h2>Каталог плагинов и расширений</h2>
+            <p>Введите ключевое слово для поиска расширения по названию или назначению:</p>
+            
+            <div class="field-row-stacked" style="margin-bottom: 15px;">
+              <label for="pluginSearchInput">Поиск плагина:</label>
+              <input id="pluginSearchInput" type="text" placeholder="Например: React, Redux, Wappalyzer...">
+            </div>
+
+            <div id="pluginsList">
+              <div class="plugin-card window" style="margin-bottom: 10px;">
+                <div class="title-bar"><div class="title-bar-text">React Developer Tools</div></div>
+                <div class="window-body">
+                  <p><strong>Категория:</strong> JS-фреймворки</p>
+                  <p>Добавляет панели Components и Profiler для инспектирования иерархии React-компонентов, стейта и пропсов.</p>
+                </div>
+              </div>
+
+              <div class="plugin-card window" style="margin-bottom: 10px;">
+                <div class="title-bar"><div class="title-bar-text">Redux DevTools</div></div>
+                <div class="window-body">
+                  <p><strong>Категория:</strong> Управление состоянием</p>
+                  <p>Предоставляет отладку со «стрелой времени» (Time-travel debugging) для отслеживания экшенов и состояния Redux.</p>
+                </div>
+              </div>
+
+              <div class="plugin-card window" style="margin-bottom: 10px;">
+                <div class="title-bar"><div class="title-bar-text">Wappalyzer</div></div>
+                <div class="window-body">
+                  <p><strong>Категория:</strong> Аналитика стек-технологий</p>
+                  <p>Определяет фреймворки, CMS, библиотеки, веб-серверы и аналитические системы, используемые на сайте.</p>
+                </div>
+              </div>
+
+              <div class="plugin-card window" style="margin-bottom: 10px;">
+                <div class="title-bar"><div class="title-bar-text">Lighthouse</div></div>
+                <div class="window-body">
+                  <p><strong>Категория:</strong> Аудит и SEO</p>
+                  <p>Автоматизированный инструмент от Google для проверки производительности, доступности (Accessibility) и SEO.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-content">
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Рекомендация</div></div>
+          <div class="window-body">
+            <p>Отключайте неиспользуемые плагины в режиме инкогнито, чтобы избежать искажения результатов производительности.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="site-footer window">
+      <div class="status-bar-custom">
+        <span>© 2026 Канева Валерия Сергеевна</span>
+        <span>Тема: DevTools</span>
+        <span>Фреймворк: 98.css</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — DevTools 98 | Канева Валерия</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="site-header window">
+      <div class="title-bar header-bar">
+        <div class="title-bar-text brand-title">💻 DevTools_Explorer_v1.0.exe</div>
+        <button class="mobile-toggle" id="mobileMenuToggle">☰ Меню</button>
+      </div>
+      <div class="window-body">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="plugins.html">Плагины</a></li>
+            <li><a href="comparison.html">Сравнение</a></li>
+            <li><a href="media.html">Видеоуроки</a></li>
+            <li><a href="contact.html" class="active">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <section class="window">
+          <div class="title-bar"><div class="title-bar-text">Обратная связь и контакты автора</div></div>
+          <div class="window-body">
+            <h2>Связаться с автором проекта</h2>
+            <p>Заполните форму ниже, чтобы задать вопрос по теме DevTools или отправить отзыв о проекте:</p>
+
+            <form id="contactForm">
+              <div class="field-row-stacked" style="margin-bottom: 10px;">
+                <label for="userName">Ваше имя (ФИО):</label>
+                <input id="userName" type="text" required placeholder="Иван Иванов">
+              </div>
+
+              <div class="field-row-stacked" style="margin-bottom: 10px;">
+                <label for="userEmail">Электронная почта (E-mail):</label>
+                <input id="userEmail" type="email" required placeholder="example@mail.ru">
+              </div>
+
+              <div class="field-row-stacked" style="margin-bottom: 10px;">
+                <label for="browserSelect">Выберете ваш основной браузер:</label>
+                <select id="browserSelect">
+                  <option value="Chrome">Google Chrome</option>
+                  <option value="Firefox">Mozilla Firefox</option>
+                  <option value="Safari">Apple Safari</option>
+                  <option value="Edge">Microsoft Edge</option>
+                </select>
+              </div>
+
+              <div class="field-row-stacked" style="margin-bottom: 10px;">
+                <label for="userMessage">Текст сообщения:</label>
+                <textarea id="userMessage" rows="4" required placeholder="Введите ваше сообщение..."></textarea>
+              </div>
+
+              <div class="field-row" style="margin-bottom: 15px;">
+                <input id="subscribeCheck" type="checkbox" checked>
+                <label for="subscribeCheck">Подписаться на обновления DevTools</label>
+              </div>
+
+              <button type="submit">Отправить сообщение</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-content">
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Контакты</div></div>
+          <div class="window-body">
+            <p><strong>Разработчик:</strong> Канева Валерия Сергеевна</p>
+            <p><strong>Email:</strong> student@university.ru</p>
+            <p><strong>Учебная группа:</strong> [Твоя группа]</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Модальное окно Windows 98 -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="window modal-window">
+        <div class="title-bar">
+          <div class="title-bar-text">Уведомление системы</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" id="closeModalBtn"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p id="modalMessage">Ваше сообщение успешно отправлено!</p>
+          <button style="float: right; margin-top: 10px;" onclick="document.getElementById('modalOverlay').classList.remove('open')">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer window">
+      <div class="status-bar-custom">
+        <span>© 2026 Канева Валерия Сергеевна</span>
+        <span>Тема: DevTools</span>
+        <span>Фреймворк: 98.css</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

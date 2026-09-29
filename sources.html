@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель Sources — DevTools 98 | Канева Валерия</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="site-header window">
+      <div class="title-bar header-bar">
+        <div class="title-bar-text brand-title">💻 DevTools_Explorer_v1.0.exe</div>
+        <button class="mobile-toggle" id="mobileMenuToggle">☰ Меню</button>
+      </div>
+      <div class="window-body">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="sources.html" class="active">Sources</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="plugins.html">Плагины</a></li>
+            <li><a href="comparison.html">Сравнение</a></li>
+            <li><a href="media.html">Видеоуроки</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <section class="window">
+          <div class="title-bar"><div class="title-bar-text">Отладка кода и брейкпоинты в панели Sources</div></div>
+          <div class="window-body">
+            <h2>Панель Sources (Отладчик JavaScript)</h2>
+            <p>Панель <strong>Sources</strong> предназначена для пошаговой отладки JavaScript-кода, установки точек останова (Breakpoints) и редактирования файлов скриптов.</p>
+
+            <fieldset>
+              <legend>Виды точек останова (Breakpoints)</legend>
+              <ul>
+                <li><strong>Line-of-code Breakpoints:</strong> Остановка на конкретной строке кода.</li>
+                <li><strong>Conditional Breakpoints:</strong> Срабатывание остановки только при выполнении логического условия.</li>
+                <li><strong>DOM Breakpoints:</strong> Остановка при модификации выбранного узла DOM.</li>
+                <li><strong>XHR/Fetch Breakpoints:</strong> Остановка при выполнении сетевого запроса к конкретному URL.</li>
+              </ul>
+            </fieldset>
+
+            <h3>Карты исходного кода (Source Maps)</h3>
+            <p>При использовании бандлеров (Webpack, Vite) и минифицированного кода Source Maps сопоставляют скомпилированный JS с исходными исходниками TypeScript/ES6.</p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-content">
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Стек вызовов</div></div>
+          <div class="window-body">
+            <p>Панель <em>Call Stack</em> показывает всю цепочку функций, приведших к текущей остановке.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="site-footer window">
+      <div class="status-bar-custom">
+        <span>© 2026 Канева Валерия Сергеевна</span>
+        <span>Тема: DevTools</span>
+        <span>Фреймворк: 98.css</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

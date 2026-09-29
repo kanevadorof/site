@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevTools Explorer 98 — Главная | Канева Валерия</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="site-header window">
+      <div class="title-bar header-bar">
+        <div class="title-bar-text brand-title">💻 DevTools_Explorer_v1.0.exe</div>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Открыть меню">☰ Меню</button>
+      </div>
+      <div class="window-body">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="plugins.html">Плагины</a></li>
+            <li><a href="comparison.html">Сравнение</a></li>
+            <li><a href="media.html">Видеоуроки</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout-wrapper">
+      <main class="main-content">
+        <section class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">Обзор инструментов разработчика (DevTools)</div>
+          </div>
+          <div class="window-body">
+            <h2>Добро пожаловать в DevTools Explorer 98</h2>
+            <p><strong>DevTools (Developer Tools)</strong> — это встроенный комплекс программных инструментов в современных веб-браузерах, предназначенный для инспектирования кода, отладки JavaScript, анализа производительности и тестирования сетевых запросов.</p>
+            
+            <img src="https://picsum.photos/800/350?random=1" 
+                 srcset="https://picsum.photos/400/200?random=1 400w, https://picsum.photos/800/350?random=1 800w" 
+                 sizes="(max-width: 767px) 100vw, 800px" 
+                 alt="Скриншот интерфейса DevTools" 
+                 title="Интерфейс панелей отладки" 
+                 class="responsive-img">
+
+            <fieldset>
+              <legend>Ключевые возможности DevTools</legend>
+              <ul>
+                <li><strong>Инспектирование DOM и CSS:</strong> Просмотр и редактирование верстки в реальном времени.</li>
+                <li><strong>Консоль (Console):</strong> Выполнение скриптов, логирование ошибок и отладка.</li>
+                <li><strong>Сетевой монитор (Network):</strong> Анализ HTTP-запросов, заголовков, времени загрузки и ресурсов.</li>
+                <li><strong>Профилирование (Performance & Memory):</strong> Поиск утечек памяти и оптимизация рендеринга.</li>
+              </ul>
+            </fieldset>
+
+            <h3>Быстрый запуск панелей (Горячие клавиши)</h3>
+            <p>Для открытия инструментов разработчика используйте комбинации клавиш:</p>
+            <ul>
+              <li><kbd>F12</kbd> — Универсальная клавиша запуска в Windows/Linux.</li>
+              <li><kbd>Ctrl + Shift + I</kbd> — Сочетание для Chrome, Edge и Firefox.</li>
+              <li><kbd>Cmd + Option + I</kbd> — Сочетание для macOS (Safari / Chrome).</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-content">
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Опрос пользователей</div></div>
+          <div class="window-body">
+            <form id="sidebarPollForm">
+              <p>Какой ваш основной браузер?</p>
+              <div class="field-row">
+                <input id="p-chrome" type="radio" name="pollBrowser" value="Google Chrome" checked>
+                <label for="p-chrome">Chrome</label>
+              </div>
+              <div class="field-row">
+                <input id="p-firefox" type="radio" name="pollBrowser" value="Firefox">
+                <label for="p-firefox">Firefox</label>
+              </div>
+              <div class="field-row">
+                <input id="p-safari" type="radio" name="pollBrowser" value="Safari">
+                <label for="p-safari">Safari</label>
+              </div>
+              <button type="submit" style="margin-top: 8px;">Проголосовать</button>
+            </form>
+            <div id="sidebarPollResult" style="margin-top: 8px; font-weight: bold;"></div>
+          </div>
+        </div>
+
+        <div class="window">
+          <div class="title-bar"><div class="title-bar-text">Информация</div></div>
+          <div class="window-body">
+            <p><strong>Автор:</strong> Канева В. С.</p>
+            <p><strong>Фреймворк:</strong> 98.css (#42)</p>
+            <p><strong>Тема:</strong> DevTools (#16)</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="site-footer window">
+      <div class="status-bar-custom">
+        <span>© 2026 Разработка: Канева Валерия Сергеевна</span>
+        <span>Тема: Браузеры и плагины для Web-разработки</span>
+        <span>Фреймворк: 98.css</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
